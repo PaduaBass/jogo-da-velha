@@ -1,0 +1,10 @@
+export const YOU_WIN = 'Parabéns você venceu 🎉';
+export const YOU_LOSE = 'Que pena você perdeu 😔';
+export const TITLE_GAME = 'JOGO DA VELHA';
+export const MACHINE = 'Vez da Máquina';
+export const PLAYER = 'Sua vez';
+export const GOT_OLD = 'Deu Velha 😂';
+export const RESET = 'Jogar novamente';
+export const SCORE_LABEL = 'Placar';
+export const SCORE_PLAYER = 'Você';
+export const SCORE_MACHINE = 'Máquina';

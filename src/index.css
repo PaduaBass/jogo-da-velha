@@ -5,9 +5,165 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h5 {
+  margin: 0;
+}
+small {
+  margin: 10px
+}
+button {
+  height: 45px;
+  border: 0;
+  border-radius: 8px;
+  background: #e32;
+  color: #fff;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  transition: opacity 500ms;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.box {
+  background: #e32;
+  height: 200px;
+  width:  200px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0px;
+}
+
+.el {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #282c34;
+  width: 110px;
+  height: 110px;
+  padding: 26px;
+  border: 1px solid #ddd;
+}
+
+.win {
+  background: #000;
+}
+
+@keyframes animateX {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 30px;
+  }
+}
+
+@keyframes animateCircle {
+  from {
+    height: 0px;
+    width: 0px;
+  }
+  to {
+    height: 20px;
+    width: 20px;
+  }
+}
+
+.select {
+  height: 30px;
+  outline: 0;
+  width: 100px;
+  border-radius: 8px;
+  background: #222;
+  color: #fff;
+  padding: 5px;
+  border: 1px solid #fff;
+}
+
+.options {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 10px; 
+  align-items: center;
+}
+
+.options label {
+  font-size: 15px;
+  margin-right: 20px;
+}
+.footer {
+  display: flex;
+  height: 50px;
+  bottom: 0px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  animation: animateCircle linear 200ms;
+}
+
+.x1 {
+  width: 30px;
+  height: 5px;
+  background: #fff;
+  transform: rotate(45deg);
+  border-radius: 2px;
+  animation: animateX linear 200ms;
+}
+.x2 {
+  position: absolute;
+  width: 30px;
+  height: 5px;
+  background: #fff;
+  transform: rotate(-45deg);
+  border-radius: 2px;
+  animation: animateX linear 200ms;
+}
+
+
+
+@media(max-width: 500px) {
+  .el {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media(max-width: 400px) {
+  .el {
+    width: 50px;
+    height: 50px;
+  }
 }
