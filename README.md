@@ -1,3 +1,6 @@
 ## This game was developed using reactjs and typescript.
 
-To view the game [click here](https://jogodavelhapaduadev.surge.sh/)
+<p>
+To view the game
+<a href="https://jogodavelhapaduadev.surge.sh/" target="_blank">click here</a>
+</p>
